@@ -1,0 +1,336 @@
+:root {
+    --primary-color: #0b0b23;
+    --border-color: #31334a;
+}
+
+/* base */
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Helvetica Neue,Roboto,Arial,Sans-Serif!important;
+    line-height: 1.35;
+    text-align: left;
+}
+div {
+    display: block;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+.btn-blue, .btn-common, .btn-dark, .btn-gray, .btn-light-blue, .btn-red, .btn-transparent, .champion-profile-page .counters-container .counters-column .counters-list .view-more-btn {
+    padding: 0 15px;
+    min-width: 78px;
+    min-height: 36px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+}
+.flex {
+    display: flex;
+}
+
+.svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 28px;
+    width: max-content;
+    border-radius: 6px;
+} 
+
+.btn-blue {
+    background-color: #3273fa;
+    border-color: #3273fa;
+}
+
+.btn-transparent {
+    color: white;
+    border-color: #2c2c40;
+}
+
+.header {
+    height: 60px;
+}
+
+.header .header-container {
+    font-size: 1.4rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: white;
+    z-index: 300;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid var(--border-color);
+    box-sizing: content-box;
+}
+
+.header .logo-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 16px;
+    height: 100%;
+    width: 240px;
+    border-right: 1px solid var(--border-color);
+}
+
+.header .logo-nav .icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.header .logo-nav a img {
+    margin-left: 24px;
+}
+
+.header .right-header {
+    padding-right: 24px;
+}
+
+.header .right-header .support-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 12px; */
+    padding: 0 6px;
+    min-height: 25px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.header .right-header .support-btn svg {
+    margin-right: 6px;
+    width: 16px;
+}
+
+.header .right-header .account {
+    margin-right: 24px;
+}
+
+.header .right-header .account-btns {
+    display: flex;
+    align-items: center;
+}
+
+.header .right-header .signup {
+    margin-left: 12px;
+}
+
+.header .right-header .live-games {
+    border-radius: 3px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 2px; */
+}
+
+.header .right-header .right-header-icon {
+    border-radius: 3px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 16px;
+    margin-top: 2px;
+}
+
+.header .right-header .right-header-icon svg path {
+    fill: white;
+}
+
+.header .right-header .right-header-icon svg {
+    width: 14px;
+    height: 14px;
+}
+
+.autosuggest-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.landing-video {
+    display: flex;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -4;
+}
+
+.landing-video .overlay {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(7,7,32,.7)
+}
+.landing-video video {
+    position: absolute;
+    z-index: -4;
+    min-width: 1920px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+
+.content .content-header {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+.content-header img {
+    width: 266px;
+    height: 86px;
+    margin-right: 30px;
+}
+
+.content-header h1 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+
+.content-header .btn span {
+    margin-left: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: Inter;
+}
+.content-header .btn .windows-icon {
+    width: 16px;
+    margin: 0 2px;
+}
+
+.search-box-container {
+    width: 800px;
+    height: 60px;
+}
+
+.search-box-container .auto-suggest-container {
+    display: flex;
+    position: relative;
+    height: 60px;
+}
+
+.search-box-container .auto-suggest-container input {
+    color: gray;
+    padding: 10px 60px 10px 24px;
+    width: 100%;
+    border: none;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 30px;
+}
+
+.search-box-container .auto-suggest-button {
+    display: flex;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+}
+
+.search-box-container .auto-suggest-button svg {
+    height: 30px;
+    width: 30px;
+}
+
+.region-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 24px;
+}
+.region-list button {
+    background-color: #25254b;
+    border: none;
+    padding: 0 10px;
+    margin: 0 5px;
+    height: 24px;
+    border-radius: 3px;
+}
+
+/* ads */
+.ads-medium-size {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0 12px;
+    border-radius: 6px;
+    background-color: #191937;
+}
+.content .ads-medium-size {
+    margin-top: 65px;
+    margin-bottom: 20px;
+    padding-left: 21px;
+    padding-right: 21px;
+    display: flex;
+    height: auto;
+}
+/* reponsive */
+
+@media screen and (max-width: 480px) {
+    .header .logo-nav a {
+        display: none;
+    }
+}
