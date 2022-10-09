@@ -308,7 +308,7 @@ h1, h2, h3, h4 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: calc(100% + 60px);
     height: calc(100vh - 60px);
 }
 
