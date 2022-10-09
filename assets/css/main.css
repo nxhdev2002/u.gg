@@ -236,7 +236,6 @@ h1, h2, h3, h4 {
 
 #side-nav-container {
     min-width: 60px;
-    width: 60px;
     position: fixed;
     top: 60px;
     right: 0;
@@ -258,6 +257,31 @@ h1, h2, h3, h4 {
     color: #bbbedb;
 }
 
+#side-nav-container.collapsed {
+    width: 60px;
+}
+
+
+#side-nav-container.expanded {
+    width: 240px;
+}
+
+#side-nav-container.collapsed #side-nav-footer {
+    display: none;
+}
+
+#side-nav-container .site-nav {
+    width: 240px;
+}
+
+#side-nav-container .site-nav span {
+    flex: 1 1;
+    margin-left: 12px;
+    min-width: 180px;
+    font-weight: 700;
+    font-size: 13px;
+    color: white;
+}
 
 #side-nav-container .site-nav .side-nav-title {
     min-width: 36px;
@@ -267,10 +291,6 @@ h1, h2, h3, h4 {
     align-items: center;
 }
 
-#side-nav-container.collapsed .site-nav {
-    width: 60px;
-
-}
 
 #side-nav-container .site-nav {
     display: flex;
@@ -298,10 +318,22 @@ h1, h2, h3, h4 {
     height: 12px;
 }
 
-#side-nav-container > div.side-nav-link > div:nth-child(2) svg path {
+#side-nav-container > div.side-nav-link > div:nth-child(2) svg {
+    stroke-width: 1;
+}
+
+#side-nav-container.collapsed > div.side-nav-link > div:nth-child(2) svg path {
     fill: #bbbedb;
 }
 
+#side-nav-container.expanded > div.side-nav-link > div:nth-child(2) svg path {
+    fill: #51516D;
+}
+
+#side-nav-container > div.side-nav-link > div:nth-child(2) span {
+    color: #bbbedb;
+    font-weight: 500;
+}
 .content {
     position: relative;
     display: flex;
