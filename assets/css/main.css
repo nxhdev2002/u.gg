@@ -228,14 +228,14 @@ h1, h2, h3, h4 {
 
 .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
     padding: 0;
 }
 
 #side-nav-container {
     min-width: 60px;
+}
+
+#side-nav {
     position: fixed;
     top: 60px;
     right: 0;
@@ -254,15 +254,14 @@ h1, h2, h3, h4 {
     overflow-y: auto;
     height: calc(100% - 60px);
     transition: width .1s;
-    color: #bbbedb;
+    color: white;
 }
 
-#side-nav-container.collapsed {
+#side-nav.collapsed { 
     width: 60px;
 }
 
-
-#side-nav-container.expanded {
+#side-nav.expanded { 
     width: 240px;
 }
 
@@ -270,11 +269,11 @@ h1, h2, h3, h4 {
     display: none;
 }
 
-#side-nav-container .site-nav {
+#side-nav-container .site-navigator {
     width: 240px;
 }
 
-#side-nav-container .site-nav span {
+#side-nav-container .site-navigator span {
     flex: 1 1;
     margin-left: 12px;
     min-width: 180px;
@@ -283,7 +282,7 @@ h1, h2, h3, h4 {
     color: white;
 }
 
-#side-nav-container .site-nav .side-nav-title {
+#side-nav-container .site-navigator .side-nav-title {
     min-width: 36px;
     height: 30px;
     flex: 0 0 30px;
@@ -292,7 +291,7 @@ h1, h2, h3, h4 {
 }
 
 
-#side-nav-container .site-nav {
+#side-nav-container .site-navigator {
     display: flex;
     flex-direction: column;
     padding: 16px 12px;
@@ -322,15 +321,15 @@ h1, h2, h3, h4 {
     stroke-width: 1;
 }
 
-#side-nav-container.collapsed > div.side-nav-link > div:nth-child(2) svg path {
+#side-nav-container.collapsed div.side-nav-link > div:nth-child(2) svg path {
     fill: #bbbedb;
 }
 
-#side-nav-container.expanded > div.side-nav-link > div:nth-child(2) svg path {
+#side-nav-container.expanded div.side-nav-link > div:nth-child(2) svg path {
     fill: #51516D;
 }
 
-#side-nav-container > div.side-nav-link > div:nth-child(2) span {
+#side-nav-container div.side-nav-link > div:nth-child(2) span {
     color: #bbbedb;
     font-weight: 500;
 }

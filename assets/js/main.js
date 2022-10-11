@@ -3,5 +3,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         let action;
         document.getElementById("side-nav-container").getAttribute("class") === "expanded" ? action = "collapsed" : action = "expanded"
         document.getElementById("side-nav-container").setAttribute("class", action)
+        document.getElementById("side-nav").setAttribute("class", action)
     })
 });
