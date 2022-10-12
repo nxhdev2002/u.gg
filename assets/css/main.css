@@ -232,7 +232,7 @@ h1, h2, h3, h4 {
 }
 
 #side-nav-container {
-    min-width: 60px;
+    min-width: 0px;
 }
 
 #side-nav {
@@ -343,113 +343,13 @@ h1, h2, h3, h4 {
     height: calc(100vh - 60px);
 }
 
-.content .content-header {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
-}
-
-.content-header img {
-    width: 266px;
-    height: 86px;
-    margin-right: 30px;
-}
-
-.content-header h1 {
-    font-family: 'Barlow', sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    margin: 0 0 10px;
-}
-
-.content-header .btn span {
-    margin-left: 8px;
-    font-weight: 700;
-    font-size: 12px;
-    font-family: Inter;
-}
-.btn .windows-icon {
-    width: 16px;
-    margin: 0 2px;
-}
-
-.search-box-container {
-    width: 800px;
-    height: 60px;
-}
-
-.search-box-container .auto-suggest-container {
-    display: flex;
-    position: relative;
-    height: 60px;
-}
-
-.search-box-container .auto-suggest-container input {
-    color: gray;
-    padding: 10px 60px 10px 24px;
-    width: 100%;
-    border: none;
-    height: 60px;
-    font-size: 20px;
-    font-weight: 400;
-    border-radius: 30px;
-}
-
-.search-box-container .auto-suggest-button {
-    display: flex;
-    height: 100%;
-    border-radius: 30px;
-    position: absolute;
-    right: 0;
-    justify-content: center;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
-}
-
-.search-box-container .auto-suggest-button svg {
-    height: 30px;
-    width: 30px;
-}
-
-.region-list {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    padding: 24px;
-}
-.region-list button {
-    background-color: #25254b;
-    border: none;
-    padding: 0 10px;
-    margin: 0 5px;
-    height: 24px;
-    border-radius: 3px;
-}
-
-/* ads */
-.ads-medium-size {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24px 0 12px;
-    border-radius: 6px;
-    background-color: #191937;
-}
-.content .ads-medium-size {
-    margin-top: 65px;
-    margin-bottom: 20px;
-    padding-left: 21px;
-    padding-right: 21px;
-    display: flex;
-    height: auto;
-}
 /* reponsive */
 
-@media screen and (max-width: 480px) {
+/* small devices */
+@media screen and (max-width: 900px){
+    .LARGE-SIZE {
+        display: none;
+    }
     .header .logo-nav a {
         display: none;
     }
@@ -475,5 +375,158 @@ h1, h2, h3, h4 {
     body > section.header > div > div.flex.right-header > div:nth-child(5), body > section.header > div > div.flex.right-header > div:nth-child(6) {
         display: none;
     }
+    #side-nav.collapsed {
+        width: 0px;
+    }
 
+    .SMALL-SIZE {
+        flex: 1 1;
+        padding-bottom: 24px;
+        width: 100%;
+    }
+    .all-landing-page-content {
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+    .all-landing-page-content .content-side-padding-region {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .all-landing-page-content .content-side-padding-region .landing-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .all-landing-page-content .content-side-padding-region .landing-header img {
+        height: 50px;
+        margin-top: 52px;
+        cursor: pointer;
+    }
+    .all-landing-page-content .content-side-padding-region .landing-header .header {
+        width: 60%;
+        font-family: Barlow;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        font-size: 21px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+}   
+
+/* large devices */
+@media screen and (min-width: 900px){
+    .SMALL-SIZE {
+        display: none;
+    }
+
+    .content .content-header {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+    
+    .content-header img {
+        width: 266px;
+        height: 86px;
+        margin-right: 30px;
+    }
+    
+    .content-header h1 {
+        font-family: 'Barlow', sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin: 0 0 10px;
+    }
+    
+    .content-header .btn span {
+        margin-left: 8px;
+        font-weight: 700;
+        font-size: 12px;
+        font-family: Inter;
+    }
+    .btn .windows-icon {
+        width: 16px;
+        margin: 0 2px;
+    }
+    
+    .search-box-container {
+        width: 800px;
+        height: 60px;
+    }
+    
+    .search-box-container .auto-suggest-container {
+        display: flex;
+        position: relative;
+        height: 60px;
+    }
+    
+    .search-box-container .auto-suggest-container input {
+        color: gray;
+        padding: 10px 60px 10px 24px;
+        width: 100%;
+        border: none;
+        height: 60px;
+        font-size: 20px;
+        font-weight: 400;
+        border-radius: 30px;
+    }
+    
+    .search-box-container .auto-suggest-button {
+        display: flex;
+        height: 100%;
+        border-radius: 30px;
+        position: absolute;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: none;
+    }
+    
+    .search-box-container .auto-suggest-button svg {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .region-list {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding: 24px;
+    }
+    .region-list button {
+        background-color: #25254b;
+        border: none;
+        padding: 0 10px;
+        margin: 0 5px;
+        height: 24px;
+        border-radius: 3px;
+    }
+    
+    /* ads */
+    .ads-medium-size {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 24px 0 12px;
+        border-radius: 6px;
+        background-color: #191937;
+    }
+    .content .ads-medium-size {
+        margin-top: 65px;
+        margin-bottom: 20px;
+        padding-left: 21px;
+        padding-right: 21px;
+        display: flex;
+        height: auto;
+    }
 }
